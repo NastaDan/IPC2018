@@ -1,7 +1,8 @@
 #include <stdio.h>
 void main(void)
 {
-    int n, x, c;
+    long long n;
+    int x, c;
     int i = 0;
     printf("The reference number= ");
     scanf("%i", &n);
@@ -10,9 +11,9 @@ void main(void)
     while (n != 0)
     {
         c = n - (n / 10) * 10;
-        while (c == x)
+        if (c == x)
             i++;
-        n = n / 10;
+        n = (n / 10);
     }
-    printf("The number %i is present %i times", n, i);
+    printf("The number is present %i times", i);
 }
