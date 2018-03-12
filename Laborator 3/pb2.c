@@ -6,7 +6,7 @@ void main(void)
     printf("n= ");
     scanf("%i", &n);
     printf("Prime factors of %i are: ", n);
-    while (n != 0)
+    while (z * z <= n)
     {
         if (n % z == 0)
         {
@@ -18,4 +18,6 @@ void main(void)
         else
             z++;
     }
+    if (n > 1)
+        printf("%i", n);
 }
